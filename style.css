@@ -88,7 +88,7 @@ p {
   border: 1px solid #e8e8e8;
 }
 .form-divider {
-  margin: 20px 0;
+  margin: 10px 0;
   display: flex;
   justify-content: center;
   color: #ddd;
@@ -125,4 +125,16 @@ p {
   padding: 13px 10px;
   border-radius: 5px;
   border: 1px solid #ded2d9;
+}
+.btn {
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  width: 420px;
+  padding: 12px 10px;
+  border-radius: 6px;
+
+  font-size: 18px;
+  color: var(--white);
+  cursor: pointer;
 }
