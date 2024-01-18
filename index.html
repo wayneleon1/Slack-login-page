@@ -4,12 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&display=swap"
+      rel="stylesheet"
+    />
     <title>slack Login page</title>
   </head>
   <body>
     <div class="container">
       <div class="right">right</div>
-      <div class="left">Left</div>
+      <div class="left">
+        <div class="left-wrap">
+            <div class="logo">
+              <img src="./images/slack logo.svg" alt="" />
+            </div>
+            <div class="header">
+              <div>
+                <h1>Login to your Account</h1>
+                <p>See what is going on with your business</p>
+              </div>
+              <div class="continue">
+                <div>
+                  <img src="/images/Google logo.png" alt="" />
+                </div>
+                <div>
+                  <p>Continue with Google</p>
+                </div>
+              </div>
+            </div>
+            <div class="form-divider">
+              ------------- <span>or Sign in with Email</span> -------------
+            </div>
+            <div class="form-container">
+              <div class="form-content">
+                <div class="input-group">
+                  <div>
+                    <label for="Email">Email</label>
+                  </div>
+                  <div>
+                    <input type="text" id="Email" placeholder="mail@abc.com" />
+                  </div>
+                </div>
+                <div class="input-group">
+                  <div>
+                    <label for="Password">Password</label>
+                  </div>
+                  <div>
+                    <input
+                      type="Password"
+                      id="Password"
+                      placeholder="*****************"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
