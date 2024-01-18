@@ -23,7 +23,7 @@ p {
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-columns: 3fr 2.5fr;
@@ -39,15 +39,16 @@ p {
   height: 100%;
 
   display: flex;
-  justify-content: center;
+  align-items: center;
+  padding: 0 15%;
 }
 .left-wrap {
-  width: 420px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 .logo {
-  margin-top: 60px;
+  /* margin-top: 60px; */
   width: 50px;
   height: 50px;
 }
@@ -62,7 +63,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 15px;
 }
 .header h1 {
   color: var(--secondary);
@@ -107,12 +108,11 @@ p {
 .form-content {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 .input-group {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 4px;
 }
 .input-group label {
@@ -121,20 +121,91 @@ p {
   font-weight: 500;
 }
 .input-group input {
-  width: 420px;
+  width: 100%;
   padding: 13px 10px;
   border-radius: 5px;
   border: 1px solid #ded2d9;
 }
+.forget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #a1a1a1;
+  font-size: 12px;
+  font-weight: 400;
+}
+.row1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: var(--gray);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+input[type="checkbox"]::after {
+  content: "\f00c";
+  font-family: "font awesome 5 free";
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--white);
+  display: none;
+}
+input[type="checkbox"]:hover {
+  background-color: #a1a1a1;
+}
+input[type="checkbox"]:checked {
+  background-color: var(--primary);
+}
+input[type="checkbox"]:checked::after {
+  display: block;
+}
+
 .btn {
   background-color: var(--primary);
   border: none;
   outline: none;
-  width: 420px;
+  width: 100%;
   padding: 12px 10px;
   border-radius: 6px;
 
   font-size: 18px;
   color: var(--white);
   cursor: pointer;
+}
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  color: var(--gray);
+  font-size: 16px;
+}
+.create {
+  color: var(--primary);
+  font-weight: 600;
+}
+@media screen and (max-width: 448px) {
+  .right {
+    display: none;
+  }
+  .left {
+    padding: 20px 5%;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
 }
