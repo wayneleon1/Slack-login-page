@@ -285,6 +285,18 @@ input[type="checkbox"]:checked::after {
   width: 100%;
   height: 100%;
 }
+
+.center-down {
+  top: 60%;
+  right: 28%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+.center-down img {
+  width: 100%;
+  height: 100%;
+}
 @media screen and (max-width: 448px) {
   .right {
     display: none;
